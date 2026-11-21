@@ -1,0 +1,7 @@
+﻿*.exe
+*.o
+*.obj
+*.pdb
+*.ilk
+build/
+.vs/
