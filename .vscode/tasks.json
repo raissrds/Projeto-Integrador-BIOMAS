@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar POC com Allegro",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "poc.c",
+                "-o",
+                "poc.exe",
+                "-IC:/msys64/ucrt64/include",
+                "-LC:/msys64/ucrt64/lib",
+                "-lallegro",
+                "-lallegro_primitives"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
