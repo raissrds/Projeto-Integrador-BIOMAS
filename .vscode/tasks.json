@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar e abrir personagem",
+            "type": "process",
+            "command": "C:/msys64/usr/bin/bash.exe",
+            "args": [
+                "-c",
+                "export PATH=/ucrt64/bin:/usr/bin:$PATH; pkg-config --exists allegro-5 allegro_primitives-5 allegro_image-5 && gcc -std=c11 -Wall -Wextra -g main.c movimento.c -o movimento.exe $(pkg-config --cflags --libs allegro-5 allegro_primitives-5 allegro_image-5) && ./movimento.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        }
+    ]
+}
