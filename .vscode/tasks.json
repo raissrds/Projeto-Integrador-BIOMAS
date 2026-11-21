@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar e abrir menu",
+            "type": "process",
+            "command": "C:/msys64/usr/bin/bash.exe",
+            "args": [
+                "-c",
+                "export PATH=/ucrt64/bin:/usr/bin:$PATH; pkg-config --exists allegro-5 allegro_image-5 && gcc -std=c11 -Wall -Wextra -g main.c menu.c -o menu_diagnostico.exe $(pkg-config --cflags --libs allegro-5 allegro_image-5) && ./menu_diagnostico.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        }
+    ]
+}
