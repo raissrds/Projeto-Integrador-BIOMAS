@@ -93,4 +93,3 @@ Os executáveis são gerados localmente e não são versionados no repositório.
 - Desenvolver e adaptar os demais biomas.
 - Integrar a progressão entre fases e a conclusão do jogo.
 
-tranforma isso no arquivo
