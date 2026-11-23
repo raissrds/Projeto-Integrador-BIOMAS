@@ -1,0 +1,14 @@
+*.exe
+*.o
+*.obj
+*.pdb
+*.ilk
+build/
+.vs/
+*.exe
+*.o
+*.obj
+*.pdb
+*.ilk
+build/
+.vs/
