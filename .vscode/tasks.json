@@ -2,12 +2,12 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Compilar e abrir menu",
+            "label": "Compilar Caatinga",
             "type": "process",
             "command": "C:/msys64/usr/bin/bash.exe",
             "args": [
                 "-c",
-                "export PATH=/ucrt64/bin:/usr/bin:$PATH; pkg-config --exists allegro-5 allegro_image-5 && gcc -std=c11 -Wall -Wextra -g main.c menu.c -o menu_diagnostico.exe $(pkg-config --cflags --libs allegro-5 allegro_image-5) && ./menu_diagnostico.exe"
+                "export PATH=/ucrt64/bin:/usr/bin:$PATH; pkg-config --exists allegro-5 allegro_image-5 allegro_primitives-5 allegro_font-5 && gcc -std=c11 -Wall -Wextra -g main.c movimento.c moedas.c cards.c perguntas.c -o caatinga.exe $(pkg-config --cflags --libs allegro-5 allegro_image-5 allegro_primitives-5 allegro_font-5)"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
@@ -16,12 +16,28 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": [
-                "$gcc"
-            ],
+            "problemMatcher": [],
             "presentation": {
                 "reveal": "always",
-                "panel": "dedicated"
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Executar Caatinga",
+            "type": "process",
+            "command": "C:/msys64/usr/bin/bash.exe",
+            "args": [
+                "-c",
+                "export PATH=/ucrt64/bin:/usr/bin:$PATH; ./caatinga.exe; resultado=$?; echo \"Codigo de saida: $resultado\"; exit \"$resultado\""
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "dependsOn": "Compilar Caatinga",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
             }
         }
     ]

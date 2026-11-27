@@ -1,8 +1,1 @@
-# Ignoro os executáveis e os arquivos gerados pela compilação.
-*.exe
-*.o
-*.obj
-*.pdb
-*.ilk
-build/
 *.exe
