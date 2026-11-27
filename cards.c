@@ -104,11 +104,11 @@ void card_desenhar(
 
     // Escureço o cenário atrás do card.
     al_draw_filled_rectangle(
-        0, 0,
-        (float)largura_janela,
-        (float)altura_janela,
-        al_map_rgba(0, 0, 0, 160)
-    );
+    0, 0,
+    (float)largura_janela,
+    (float)altura_janela,
+    al_map_rgba(0, 0, 0, 30)
+);
 
     al_draw_scaled_bitmap(
         card->imagem,
