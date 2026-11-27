@@ -255,9 +255,9 @@ int main(void) {
     EstadoJogo estado = APRESENTACAO;
 
     const char *caminhos[QUANTIDADE_FUNDOS] = {
-        "imagem/pantanal1.png",
-        "imagem/pantanal2.png",
-        "imagem/pantanal3.png"
+        "imagem/cerrado1.png",
+        "imagem/cerrado2.png",
+        "imagem/cerrado3.png"
     };
 
     float larguras[QUANTIDADE_FUNDOS] = {0};
@@ -265,18 +265,14 @@ int main(void) {
 
     // Distribuo os obstáculos respeitando o alcance do salto.
     Objeto objetos[] = {
-    {420,  CHAO_Y - 45,  120, 45},
-    {640,  CHAO_Y - 95,  260, 24},
-
-    {1120, CHAO_Y - 50,  100, 50},
-    {1290, CHAO_Y - 65,  100, 65},
-
-    {1640, CHAO_Y - 110, 320, 24},
-
-    {2200, CHAO_Y - 40,  100, 40},
-    {2390, CHAO_Y - 85,  230, 24},
-
-    {2880, CHAO_Y - 55,  150, 55}
+    {400,  CHAO_Y - 70,  100, 24},
+    {590,  CHAO_Y - 110, 140, 24},
+    {820,  CHAO_Y - 80,  160, 24},
+    {1190, CHAO_Y - 60,  120, 60},
+    {1660, CHAO_Y - 50,  110, 50},
+    {1840, CHAO_Y - 95,  150, 24},
+    {2340, CHAO_Y - 120, 220, 24},
+    {2920, CHAO_Y - 75,  150, 24}
 };
 
     const int quantidade_objetos =
@@ -413,7 +409,7 @@ int main(void) {
     }
 
     sprite = al_load_bitmap("imagem/personagem.png");
-    chao = al_load_bitmap("imagem/chaoPantanal.png");
+    chao = al_load_bitmap("imagem/chaocerrado.png");
 
     if (sprite == NULL || chao == NULL) {
         fprintf(stderr, "Erro ao carregar personagem ou chao.\n");
@@ -423,19 +419,19 @@ int main(void) {
     if (!carregar_textura(&pedra, "imagem/pedra.png"))
         goto finalizar;
 
-    if (!carregar_textura(&plataforma, "imagem/plataformaPantanal.png"))
+    if (!carregar_textura(&plataforma, "imagem/plataformaCerrado.png"))
         goto finalizar;
 
     if (!carregar_textura(&textura_moeda, "imagem/moeda.png"))
         goto finalizar;
 
-    if (!card_carregar(&card, "imagem/cardPantanal.png"))
+    if (!card_carregar(&card, "imagem/cardCerrado.png"))
         goto finalizar;
 
     // Uso o índice 3 porque a alternativa correta é D.
     if (!pergunta_carregar(
             &pergunta,
-            "imagem/perguntasPantanal.png",
+            "imagem/perguntasCerrado.png",
             3,
             "Planicie alagavel com cheias sazonais.",
             "A fauna inclui o tuiuiu, a capivara e o jacare."
