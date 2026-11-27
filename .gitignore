@@ -6,3 +6,11 @@
 *.ilk
 build/
 *.exe
+
+*.exe
+*.o
+*.obj
+*.pdb
+*.ilk
+build/
+.vs/
