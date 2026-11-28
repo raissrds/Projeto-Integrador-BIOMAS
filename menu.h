@@ -15,7 +15,7 @@ typedef enum {
 typedef enum {
     MENU_TELA_INICIAL,
     MENU_TELA_INSTRUCOES
-} MenuTela;
+} MenuTela; 
 
 typedef struct {
     ALLEGRO_BITMAP *imagem;

@@ -14,7 +14,7 @@ int card_carregar(
 );
 
 void card_desenhar(
-    const CardInicial *card,
+    const CardInicial *card, 
     int largura_janela,
     int altura_janela
 );

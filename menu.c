@@ -17,7 +17,7 @@ typedef struct {
 // Uso as posições dos botões na imagem original do menu.
 static const AreaBotao botoes[] = {
     {570, 425, 1100, 545, MENU_JOGAR},
-    {570, 575, 1100, 690, MENU_INSTRUCOES},
+    {570, 575, 1100, 690, MENU_INSTRUCOES}, 
     {570, 720, 1100, 835, MENU_SAIR}
 };
 

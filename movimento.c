@@ -13,7 +13,7 @@ void atualizar_movimento(
 
     // Calculo a direção do movimento horizontal.
     float movimento_x =
-        (direita - esquerda) * velocidade;
+        (direita - esquerda) * velocidade; 
 
     p->x += movimento_x;
 
