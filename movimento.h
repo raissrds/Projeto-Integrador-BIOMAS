@@ -15,7 +15,7 @@ typedef struct {
 
 typedef struct {
     float x;
-    float y;
+    float y; 
     float largura;
     float altura;
 } Objeto;

@@ -8,7 +8,7 @@
 #include "movimento.h"
 #include "moedas.h"
 #include "cards.h"
-#include "perguntas.h"
+#include "perguntas.h" 
 
 #define QUANTIDADE_FUNDOS 3
 #define MAX_MOEDAS 64

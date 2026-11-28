@@ -18,4 +18,4 @@ int coletar_moedas(
     int quantidade
 );
 
-#endif
+#endif 

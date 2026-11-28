@@ -17,7 +17,7 @@ typedef enum {
 
 typedef enum {
     PERGUNTA_NENHUMA,
-    PERGUNTA_CONTINUAR
+    PERGUNTA_CONTINUAR 
 } AcaoPergunta;
 
 typedef struct {
