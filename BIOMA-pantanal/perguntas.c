@@ -15,7 +15,7 @@ typedef struct {
     float largura;
     float altura;
 
-    float largura_origem;
+    float largura_origem; 
     float altura_origem;
 
     ALLEGRO_BITMAP *imagem;

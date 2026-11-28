@@ -21,7 +21,7 @@ int coletar_moedas(
             personagem.y + personagem.altura > moedas[i].y;
 
         if (contato) {
-            moedas[i].coletada = 1;
+            moedas[i].coletada = 1; 
             coletadas++;
         }
     }
